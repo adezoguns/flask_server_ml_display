@@ -1,0 +1,47 @@
+
+item{
+id: 1
+name: 'SA_ID_Card'
+}
+
+item{
+id: 2
+name: 'SA_ID_Book'
+}
+
+item{
+id: 3
+name: 'SA_Flag'
+}
+
+item{
+id: 4
+name: 'SA_Dot'
+}
+
+item{
+id: 5
+name: 'ID_Logo'
+}
+
+item{
+id: 6
+name: 'SA_Bird_Logo'
+}
+
+item{
+id: 7
+name: 'Face'
+}
+
+item{
+id: 8
+name: 'SA_Crown'
+}
+
+item{
+id: 9
+name: 'SA_Passport'
+}
+
+

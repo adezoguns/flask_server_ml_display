@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<title> Document</title>
+{% block head%}{% endblock %}
+<link rel ="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<link rel ="stylesheet" href="{{url_for('static', filename='css/boostrap.css')}}">
+<script type="text/javascript" script src="{{url_for('static', filename='js/justgage.js')}}"></script>
+<script type="text/javascript" script src="{{url_for('static', filename='js/raphael-2.1.4.min.js')}}"></script>
+<script type="text/javascript" script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script type="text/javascript" script src="{{url_for('static', filename='js/boostrap.js')}}"></script>
+</head>
+
+<body>
+{% block body%}{% endblock %}
+</body>
+
+</html>

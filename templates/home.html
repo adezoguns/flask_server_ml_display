@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <metaname="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel ="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+<link rel ="stylesheet" href="{{url_for('static', filename='css/boostrap.css')}}">
+<script type="text/javascript" script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script type="text/javascript" script src="{{url_for('static', filename='js/boostrap.js')}}"></script>
+<style>
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    h1,h2,h3 {
+      text-align: center;
+      background-color: white;
+    }
+
+    .blue-square-container {
+      text-align: center;
+    }
+
+    .upload_tab{
+      background-color: #ccc459;
+      width: 700px;
+      height: 700px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    upload-button {
+      position:absolute;
+      top: 10px;
+      right:0;
+    }
+
+    .yellow-square {
+      background-color: #00ff40ec;
+      margin: 0 auto;
+    }
+
+    #imagefile {
+      text-align: center;
+      margin: auto;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Green */
+      color: rgb(0, 255, 98);
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      border-radius: 50%;
+    }
+
+    .button:hover {
+      background-color: #4CAF50; /* Green */
+      color: rgb(255, 255, 255);
+    }
+
+    #upload-button{
+      border-radius: 12px;
+      padding: 13px 32px;
+    }
+    #imageUploadForm{
+      border-radius: 12px;
+      }
+
+  .imager {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 32px;
+  width: 100%;
+}
+
+</style>
+
+</head>
+
+<body background>
+
+<div class="upload_tab" >
+    <h2> Upload image to be predicted</h2><br>
+<form action="upload" method="post" id="upload-form" enctype="multipart/form-data">
+  <table>
+    <tr>
+      <td>
+       <input type="file" name="imageUploadForm" id="imageUploadForm"/><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <button type="submit" id="upload-button" name="upload-button">Upload</button><br>
+      </td>
+    </tr>
+    <td >
+      <img class="imager" src="{{url_for('static', filename='/output/')}}{{value}}" >
+    </td>
+          
+  </table>
+  </form>
+  
+ </div>
+ 
+
+</body>
+</html>
