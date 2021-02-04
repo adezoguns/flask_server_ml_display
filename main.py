@@ -15,7 +15,7 @@ path2File= os.path.dirname(os.path.realpath(__file__))
 pathToModel=path2File+'/WorkArea/FRCNN'
 
 PATH = path2File+'/static/input'
-ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 app.config['PATH']=PATH
 #app.config["TEMPLATES_AUTO_RELOAD"] = True
 
