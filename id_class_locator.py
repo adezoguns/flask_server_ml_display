@@ -37,7 +37,7 @@ def cropped(imagePath, namer, coord):
     img=cv2.imread(imagePath)
     print(coord)
     cropped_img=img[coord[1]:coord[3], coord[0]:coord[2]]
-    cropped_img= img_resize_aspect_ratio(cropped_img, 3000)
+    cropped_img= img_resize_aspect_ratio(cropped_img, 1024)
     cv2.imwrite(path2File+'/static/output2/{}'.format(namer), cropped_img)
 
 
